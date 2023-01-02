@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table class="table">
+    <tr>
+        <td class="new">
+        <h1>New travel:</h1>
+        <form class="form_for_travel" action="#" onsubmit="save_travel()">
+            <input type="text" name="" id="city" placeholder="City" required>
+            <input type="text" name="" id="country" placeholder="Country" required>
+            <input type="text" name="" id="budget" placeholder="Budget">
+            <p>Data start</p>
+            <input type="date" name="" id="datestart">
+            <p>Data end</p>
+            <input type="date" name="" id="dateend">
+            <p>Persons:</p>
+            <select name="persons" id="persons_quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7+</option>
+            </select>
+            <p>Main transfer type:</p>
+            <select name="transfer" id="transfer_type">
+                <option value="With God's help">---</option>
+                <option value="Bus">Bus</option>
+                <option value="Private car">Private car</option>
+                <option value="Railway">Railway</option>
+                <option value="Fly">Fly</option>
+                <option value="Rent car">Rent Car</option>
+                <option value="Taxi">Taxi</option>
+            </select>
+            <input type="submit" id="button_submit" value="Save travel"></input>
+        </form>
+        </td>
+        <td class="history">
+            <h1>Travel history</h1>
+            <div id="result"></div>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
